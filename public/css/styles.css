@@ -1,0 +1,1608 @@
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+
+    /*------------theme colors-------------*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --brawn: #714747;
+    /*------------gradiant color-------------*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*------------theme font family-------------*/
+    --Abel: 'Abel', sans-serif;
+    --Anton: 'Anton', sans-serif;
+    --Josefin: 'Josefin Sans', sans-serif;
+    --Lexend: 'Lexend Deca', sans-serif;
+    --Livvic: 'Livvic', sans-serif;
+}
+
+/*-------------------google font-----------------*/
+
+/* font-family: 'Abel', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Babylonica', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Paytone One', sans-serif; */
+
+
+/*---------x----------google font--------x---------*/
+
+
+
+/*--------------global classes---------------------*/
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: var(--Lexend);
+}
+
+h2 {
+    font-family: var(--Josefin)
+}
+
+h3 {
+    font-family: var(--Abel);
+
+}
+
+em .product-heading {
+    background-color: #714747;
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+.bottom-div {
+    height: 8rem;
+    background: #714747;
+    width: 100%;
+}
+
+/* button {
+    border: none;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    margin: 0;
+} */
+
+
+button.btm {
+    border: none;
+    border-radius: 1rem;
+    padding: 0rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    margin: 0;
+}
+
+button.btm:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: black;
+}
+
+
+/*----------------------------dropdown menu -----------------------------*/
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* background-color: #a21313; */
+    border: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:checked {
+    background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* display: grid; */
+
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+/*-------------x---------------dropdown menu --------------x---------------*/
+
+
+
+/*--------x------------ global classes---------x-----------*/
+
+/*------------------- navigation ----------------------------------*/
+
+.nam {
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 15vh;
+    /* overflow: hidden; */
+    background-color: black;
+    z-index: 1;
+    transition: height 1s ease-in-out;
+}
+
+.nam .nam-menu {
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nam .toggle-collapsm {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nam .toggle-collapsm .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nam .toggle-collapsm .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+
+.collapsm {
+    height: 33rem;
+}
+
+
+.nam .nam-items {
+
+    display: flex;
+    margin: 0%;
+    flex-direction: row;
+}
+
+.nam .nam-items .nam-links {
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nam .nam-items .nam-links:hover {
+    background-color: var(--midnight);
+}
+
+.nam .nam-items .nam-links:hover a {
+    color: black;
+}
+
+.dropdown:hover .dropdown-content .btm {
+    color: #0000;
+}
+
+
+.nam .nam-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2rem;
+    color: var(--white);
+
+}
+
+.nam .social {
+    padding: .5rem 1rem;
+}
+
+.nam .social i {
+    padding: 0 2rem;
+}
+
+.nam .social i:hover {
+    color: rgb(236, 109, 45);
+}
+
+
+/*--------x----------- navigation -------------x---------------------*/
+
+
+
+
+
+
+
+/*------------------------Main Content--------------------*/
+
+
+/*------------------------Site Title-------------------*/
+
+
+main .site-title {
+
+
+    background-image: -webkit-linear-gradient(35deg, #9DB2BF 30%, #DDE6ED 70%);
+    /* height: 60vh; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+
+main .site-title .site-background {
+    display: flex;
+    position: relative;
+    text-align: center;
+    /* color: var(--white); */
+    /* position: absolute;
+    bottom: 0; */
+    /* width: 100%; */
+
+}
+
+main .site-title .site-background .site-background-image {
+    /* display: flex; */
+    justify-content: center;
+    position: relative;
+    margin-top: 0rem;
+    padding: 0;
+}
+
+
+main .site-title .site-background .site-background-image .image {
+    height: 14rem;
+    position: relative;
+    background-repeat: no-repeat;
+    /* background-size: 70% 70%; */
+    background-size: contain;
+    background-image: url("../images/hd_car_compressor-removebg-preview.png");
+    margin-left: 30%;
+    justify-content: center;
+
+}
+
+main .site-title .site-background .site-text {
+    /* background-color:var(--brawn) ; */
+    padding: 1rem;
+    color: var(--white);
+    text-shadow: 2px 5px 5px black;
+
+}
+
+main .site-title .siteTitle-button {
+
+    /* background-color: #0f0f0f; */
+    margin: o;
+    /* padding: 0.2rem 0rem; */
+}
+
+main .site-title .btm {
+    background: var(--sky);
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+}
+
+main .site-title .btm:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/*----------x--------------Site Title--------x------------*/
+
+
+
+
+/*------------------------- compressor carousel--------------------------*/
+
+main .compressors {
+
+    /* background-image: url("../images/bg\ img\ 3.jpg"); */
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    background-size: 100% 100%;
+    margin-top: 0;
+
+    width: 100%;
+    margin-bottom: 0rem;
+    padding-bottom: 3rem;
+    /* background-size: 65%; */
+
+    background-image: -webkit-linear-gradient(65deg, white 50%, #d5d5eb 70%);
+}
+
+
+
+main .compressors .container .title {
+    position: relative;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+main .compressors .container h1 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0%;
+    /* background-color: white; */
+    /* border-radius: 3rem; */
+    margin: 0 auto;
+
+}
+
+
+main .compressors-post {
+    padding-top: 6rem;
+}
+
+main .compressors .container .compressors-post .compressors-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 88%;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 0rem;
+    box-shadow: 0 15px 20px #2B2A4C;
+
+}
+
+
+main .compressors-content .compressors-title {
+
+    justify-content: center;
+}
+
+main .compressors-content .btn-compressors {
+
+    background: var(--sky);
+    margin-left: 0;
+
+
+}
+
+section .container .owl-nav {
+    position: absolute;
+    top: 0%;
+    margin: 2rem auto 0rem 0rem;
+    width: 100%;
+
+}
+
+section .container .owl-nav2 {
+    position: absolute;
+    top: 0%;
+    margin: 2rem auto 0rem 0rem;
+    width: 100%;
+
+}
+
+
+section .container .owl-nav3 {
+    position: absolute;
+    top: 0%;
+    margin: 2rem auto 0rem 0rem;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: white;
+    color: var(--text-gray);
+}
+
+
+
+
+
+/*--------------x----------- compressor carousel-------------x-------------*/
+
+/*----------------------------- ps content ------------------------------------------------*/
+
+
+
+
+
+
+
+
+main .container {
+    position: relative;
+    margin: 0;
+}
+
+
+
+
+main .container .ps-content {
+    background-image: -webkit-linear-gradient(180deg, white 30%, #b6c7d4 70%);
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+main .container .ps-content .ps {
+    padding-left: 3rem;
+}
+
+main .p-content {
+    width: 100%;
+}
+
+main .ps-content .p-content>.p-image,
+.p-title {
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+main .ps-content .p-image>div {
+    overflow: hidden;
+}
+
+main .ps-content .p-content>.p-image .img {
+    width: 50%;
+}
+
+
+main .ps-content .p-content>.p-image .img:hover {
+    transform: scale(1.3);
+    transition: all 1s ease-in-out;
+}
+
+main .p-content .p-title .list-items {
+    background: var(--sky);
+    padding: .2rem 1rem;
+    margin: .8rem 0rem;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+}
+
+main .ps-content .p-content .p-title1 {
+    background-color: var(--white);
+    padding: 2rem;
+    width: 50%;
+    /* margin-right: 5rem; */
+    border-radius: 20%;
+}
+
+main .ps-content .p-content .p-title1 h4 {
+    padding: 0;
+    margin: 0;
+}
+
+
+main .p-content .p-title a {
+    font-family: var(--Anton);
+    /* font-size: 1.5rem; */
+    color: black;
+}
+
+.ps-content .p-content .p-title .p-btm {
+    border-radius: 0%;
+    padding: .4rem 1.5rem;
+    background: var(--sky);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------- pagenation---------------------------------------*/
+
+
+main .container .pagination {
+    position: absolute;
+    bottom: 1%;
+    height: 1%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-bottom: 1.4rem;
+}
+
+
+
+main .ps-content .pagination a {
+    padding: 1rem 0.3rem;
+    border-radius: 100%;
+    margin: 0 0.9rem;
+    font-family: var(--Lexend);
+    display: grid;
+}
+
+main .ps-content .pagination .pages {
+    background: var(--text-gray);
+    color: var(--white);
+}
+
+/*-------------x---------- pagenation---------------------x------------------*/
+
+
+/*-------------x---------------- ps content -------------------x-----------------------------*/
+
+/*---------------------------------- side bar ------------------------------------------------*/
+/*----------------- category -----------------------*/
+main .ps-content>.side-bar {
+    padding-top: 4rem;
+}
+
+main .ps-content>.side-bar .category-list {
+    font-family: var(--Livvic);
+}
+
+main .ps-content>.side-bar .category-list .list-items {
+    background: var(--sky);
+    padding: .2rem 1rem;
+    margin: .8rem 0rem;
+    /* border-radius: 3rem; */
+    width: 70%;
+    /* display: flex; */
+
+
+}
+
+/* main .ps-content>.side-bar .dropdown-content {
+   
+}
+
+
+
+
+main .ps-content>.side-bar .category-list .list-items .dropdown-content{
+    z-index: 1;
+} */
+
+main .ps-content>.side-bar .category-list .list-items a {
+    font-family: var(--Anton);
+    /* font-size: 1.5rem; */
+    color: black;
+
+
+}
+
+
+
+/*-----------------x-------- category ------------------------x-----------*/
+
+
+
+
+
+
+
+/*------------------------------- our mission -----------------------------------------------------*/
+
+main .ps-content>.side-bar .our-mission {
+    padding-top: 8rem;
+
+}
+
+
+/*-------------------x------- our mission -----------------x------------------------------------*/
+
+main .side-bar .p-title {
+    background-color: var(--white);
+}
+
+/*-------------------------------------- patners -------------------------*/
+
+
+
+
+
+/*-------------------------------------- patners -------------------------*/
+
+
+/*--------------------x-------------- side bar ----------------------x--------------------------*/
+
+
+/*----------x--------------Main Content--------x------------*/
+
+
+/*------------------------------ footer ---------------------*/
+
+footer.footer {
+    height: 100%;
+    background-color: #2B2A4C;
+    position: relative;
+
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 60% 40%; */
+}
+
+footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2 {
+    color: var(--white);
+}
+
+footer.footer .instagram div>img {
+    display: inline-block;
+    height: 50%;
+    width: 25%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .contact div i {
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights span {
+    color: var(--white);
+}
+
+
+footer.footer .move-up {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.footer.footer .contact i:hover {
+    color: #EA906C;
+}
+
+/*------------------------------ footer ---------------------*/
+
+
+/*--------------- products page------------------------------*/
+
+/*---------------------- slick slider one----------------------------*/
+/* 
+.slick-track{
+   align-items: center; 
+   justify-content: center;
+   padding: 0;
+   padding-left: 30%;
+   padding-top: 3rem;
+   padding-bottom: 6rem;
+}
+
+.site-slider{
+    position: relative;
+}
+
+.position-top{
+    position: absolute;
+    top: 60%
+}
+
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+background-color: rgb(25, 25, 133);
+padding: 1rem 1.5rem;
+color: var(--white);
+border-radius: 10rem;
+margin: 0 1rem;
+opacity: 0;
+transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 1;
+}
+
+
+.right-0{
+    right:0
+} */
+
+/*-------------- slick dots --------------------*/
+
+/* ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0; */
+/* right: 50%; */
+/* width: 100%; */
+/* }
+
+.slick-dots li{
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button{
+    display: block;
+    width: .5rem;
+    height:0.5rem;
+    padding:0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+text-indent: -9999px;
+border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button{
+    transform: scale(2.5); */
+/* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+/* }  */
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider one-----------------x-----------*/
+
+/*---------------------- slick slider two----------------------------*/
+/*
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-two {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-two .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-two .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-two .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-two .prev,
+.site-slider-two .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-two:hover .slider-btn .prev,
+.site-slider-two:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider two-----------------x-----------*/
+
+
+/*---------------------- slick slider three----------------------------*/
+/* 
+.site-slider{
+    position: relative;
+} */
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-three {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-three .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-three .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-three .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-three .prev,
+.site-slider-three .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-three:hover .slider-btn .prev,
+.site-slider-three:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider three-----------------x-----------*/
+
+
+/*---------------------- slick slider four----------------------------*/
+/* 
+.site-slider{
+    position: relative;
+} */
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-four {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-four .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-four .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-four .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-four .prev,
+.site-slider-four .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-four:hover .slider-btn .prev,
+.site-slider-four:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider four-----------------x-----------*/
+
+
+/*---------------------- slick slider five----------------------------*/
+/* 
+.site-slider{
+    position: relative;
+} */
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-five {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-five .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-five .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-five .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-five .prev,
+.site-slider-five .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-five:hover .slider-btn .prev,
+.site-slider-five:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider five-----------------x-----------*/
+
+
+/*---------------------- slick slider six----------------------------*/
+/* 
+.site-slider{
+    position: relative;
+} */
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-six {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-six .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-six .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-six .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-six .prev,
+.site-slider-six .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-six:hover .slider-btn .prev,
+.site-slider-six:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider six-----------------x-----------*/
+
+
+
+/*---------------------- slick slider seven----------------------------*/
+/* 
+.site-slider{
+    position: relative;
+} */
+
+.position-top {
+    position: absolute;
+    top: 70%
+}
+
+.site-slider-seven {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-seven .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-seven .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: #3f4954;
+    color: lightgray;
+}
+
+.site-slider-seven .slick-track .product:hover span {
+    background-color: transparent;
+}
+
+
+.site-slider-seven .prev,
+.site-slider-seven .next {
+    background-color: rgb(25, 25, 133);
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    border-radius: 10rem;
+    margin: 0 1rem;
+    opacity: 0.5;
+    transition: opacity 1s ease;
+}
+
+.site-slider-seven:hover .slider-btn .prev,
+.site-slider-seven:hover .slider-btn .next {
+    opacity: 1;
+}
+
+
+.right-0 {
+    right: 0
+}
+
+/*-------------- slick dots --------------------*/
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(152, 152, 235);
+    text-indent: -9999px;
+    border-radius: 100%;
+
+}
+
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    /* box-shadow: 0px 3px 5px 1px rgba(147, 147, 151, 0.973); */
+}
+
+/*------x-------- slick dots ----------x----------*/
+
+/*---------x------------- slick slider seven-----------------x-----------*/
+
+
+
+
+
+
+
+
+
+
+/*-----x---------- products page---------x---------------------*/
+
+
+/*------------------------viewport less than or equal to 700px-------------------*/
+
+@media only screen and (max-width: 700px) {
+
+    main .container .ps-content {
+        grid-template-columns: 100%;
+        padding-bottom: 10rem !important;
+    }
+
+
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: 60% 40%; */
+    }
+
+}
+
+
+/*----------x--------------viewport less than or equal to 1190px--------x-----------*/
+
+/*------------------------viewport less than or equal to 1190px-------------------*/
+
+@media only screen and (max-width: 1190px) {
+    main .p-content .p-title a {
+        font-size: 0.7rem;
+    }
+
+    main .container .pagination {
+        position: absolute;
+        bottom: 1%;
+        height: 1%;
+        width: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        padding-bottom: 1.4rem;
+    }
+
+}
+
+/*-----------------------viewport less than or equal to 1163px------------------*/
+
+@media only screen and (max-width: 1163px) {
+
+    main .container .ps-content {
+        padding-bottom: 6rem;
+    }
+
+}
+
+/*----------------x--------viewport less than or equal to 1163px------x-------------*/
+
+/*----------------x--------viewport less than or equal to 1190px------x-------------*/
+
+
+/*------------------------viewport less than or equal to 822px-------------------*/
+
+@media only screen and (max-width: 822px) {
+
+
+    .nam {
+        min-height: 10vh;
+
+    }
+
+
+    .nam .nam-menu,
+    .nam .nam-items {
+        flex-direction: column;
+
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nam .nam-items .nam-links:hover {
+        background-color: var(--midnight);
+    }
+
+    .nam .toggle-collapsm {
+        display: initial;
+    }
+
+    button.btm {
+        border: none;
+        border-radius: 1rem;
+        padding: 0rem 1rem;
+        font-size: 1rem;
+        font-family: var(--Livvic);
+        cursor: pointer;
+        margin: 0;
+    }
+
+
+
+}
+
+
+
+/*------------------------viewport less than or equal to 822px-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- viewport less than or equal to 822px  -------------------------------------*/
+
+/* @media only screen and (max-width: 822px) {
+
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+
+
+
+
+} */
+
+
+
+
+/*--------x-----------viewport less than or equal to 822px -------------x---------------------*/
