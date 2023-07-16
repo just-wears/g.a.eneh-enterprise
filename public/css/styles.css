@@ -79,6 +79,11 @@ em .product-heading {
     text-align: center;
 }
 
+hr{
+    background-color: rgb(200, 194, 194);
+padding-bottom: 2rem;
+margin: 0;
+}
 
 
 .bottom-div {
@@ -881,6 +886,8 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 .site-slider-two .slick-track .product:hover span {
@@ -982,6 +989,9 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
+
 }
 
 .site-slider-three .slick-track .product:hover span {
@@ -1083,6 +1093,8 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 .site-slider-four .slick-track .product:hover span {
@@ -1184,6 +1196,8 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 .site-slider-five .slick-track .product:hover span {
@@ -1285,6 +1299,8 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 .site-slider-six .slick-track .product:hover span {
@@ -1387,6 +1403,8 @@ border-radius: 100%;
     border: 1px solid;
     background-color: #3f4954;
     color: lightgray;
+    font-size: smaller;
+    font-weight: 200;
 }
 
 .site-slider-seven .slick-track .product:hover span {
