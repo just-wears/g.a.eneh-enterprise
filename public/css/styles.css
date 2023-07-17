@@ -8,12 +8,13 @@ body {
 :root {
 
     /*------------theme colors-------------*/
-    --text-gray: #3f4954;
-    --text-light: #686666da;
-    --bg-color: #0f0f0f;
+    --nav-color: #064b5a;
+    --body-color: #fde16d;
+    --footer-color: #bf3a00;
     --white: #ffffff;
-    --midnight: #104f55;
-    --brawn: #714747;
+    --desgin-color:#d05e00;
+    --write-up:#0d0527;
+    --ash-color:rgb(228, 227, 227);
     /*------------gradiant color-------------*/
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
@@ -74,13 +75,14 @@ h3 {
 }
 
 em .product-heading {
-    background-color: #714747;
-    color: var(--white);
+    /* background-color: var(--footer-color); */
+    color: black;
     text-align: center;
+    padding-top: 2rem;
 }
 
 hr{
-    background-color: rgb(200, 194, 194);
+    background-color: var(--white);
 padding-bottom: 2rem;
 margin: 0;
 }
@@ -180,12 +182,11 @@ button.btm:hover {
 /*------------------- navigation ----------------------------------*/
 
 .nam {
-    background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 15vh;
+    min-height: 14vh;
     /* overflow: hidden; */
-    background-color: black;
+    background-color: var(--nav-color);
     z-index: 1;
     transition: height 1s ease-in-out;
 }
@@ -271,7 +272,7 @@ button.btm:hover {
 }
 
 .nam .social i:hover {
-    color: rgb(236, 109, 45);
+    color: var(--body-color);
 }
 
 
@@ -292,13 +293,14 @@ button.btm:hover {
 main .site-title {
 
 
-    background-image: -webkit-linear-gradient(35deg, #9DB2BF 30%, #DDE6ED 70%);
+    /* background-image: -webkit-linear-gradient(35deg, #9DB2BF 30%, #DDE6ED 70%); */
+    background-color: var(--desgin-color);
     /* height: 60vh; */
     margin: 0;
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 0;
+    margin: 1rem 0rem;
     padding: 0;
     padding-bottom: 3rem;
     padding-top: 3rem;
@@ -369,7 +371,9 @@ main .site-title .btm:hover {
 /*----------x--------------Site Title--------x------------*/
 
 
-
+main{
+    margin: 0;
+}
 
 /*------------------------- compressor carousel--------------------------*/
 
@@ -382,11 +386,12 @@ main .compressors {
     margin-top: 0;
 
     width: 100%;
-    margin-bottom: 0rem;
+    margin: 0rem;
+    margin-bottom: 1rem;
     padding-bottom: 3rem;
     /* background-size: 65%; */
-
-    background-image: -webkit-linear-gradient(65deg, white 50%, #d5d5eb 70%);
+background-color:rgb(228, 227, 227);
+    /* background-image: -webkit-linear-gradient(65deg,  #fde16d 50%, #ffeda8 70%); */
 }
 
 
@@ -442,7 +447,7 @@ main .compressors-content .btn-compressors {
 section .container .owl-nav {
     position: absolute;
     top: 0%;
-    margin: 2rem auto 0rem 0rem;
+    margin: 2rem 0rem;
     width: 100%;
 
 }
@@ -450,7 +455,7 @@ section .container .owl-nav {
 section .container .owl-nav2 {
     position: absolute;
     top: 0%;
-    margin: 2rem auto 0rem 0rem;
+    margin: 2rem 0rem;
     width: 100%;
 
 }
@@ -459,7 +464,7 @@ section .container .owl-nav2 {
 section .container .owl-nav3 {
     position: absolute;
     top: 0%;
-    margin: 2rem auto 0rem 0rem;
+    margin: 2rem 0rem;
     width: 100%;
 
 }
@@ -495,34 +500,43 @@ section .container .owl-nav3 {
 
 
 
-
+/* 
 
 main .container {
     position: relative;
     margin: 0;
-}
+
+} */
 
 
 
 
-main .container .ps-content {
-    background-image: -webkit-linear-gradient(180deg, white 30%, #b6c7d4 70%);
-
+main .containers .ps-content {
+ 
+    /* background-image: -webkit-linear-gradient(65deg, var(--desgin-color) 50%, var(--ash-color) 50%); */
     display: grid;
+    /* background-color: var(--desgin-color); */
     grid-template-columns: 40% 60%;
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
-    padding-bottom: 2rem;
-}
-
-main .container .ps-content .ps {
-    padding-left: 3rem;
-}
-
-main .p-content {
+    /* padding-bottom: 2rem; */
     width: 100%;
 }
 
+main .containers .ps-content .ps {
+    padding-left: 0rem;
+    padding-right: 3rem;
+}
+
+main .p-content {
+    background-image: -webkit-linear-gradient(65deg, var(--desgin-color) 50%, var(--ash-color) 50%);
+    width: 100%;
+    margin: 1rem 0rem;
+}
+main .ps-content .p-content .p-image{
+    text-align: center;
+    align-items: center;
+}
 main .ps-content .p-content>.p-image,
 .p-title {
     padding: 1rem 1rem;
@@ -544,7 +558,7 @@ main .ps-content .p-content>.p-image .img:hover {
 }
 
 main .p-content .p-title .list-items {
-    background: var(--sky);
+    background: var(--footer-color);
     padding: .2rem 1rem;
     margin: .8rem 0rem;
     border-radius: 3rem;
@@ -553,16 +567,23 @@ main .p-content .p-title .list-items {
 }
 
 main .ps-content .p-content .p-title1 {
-    background-color: var(--white);
+    background-color: var(--nav-color);
     padding: 2rem;
-    width: 50%;
+    width: 100%;
+    color: var(--white);
     /* margin-right: 5rem; */
-    border-radius: 20%;
+    /* border-radius: 20%; */
 }
 
-main .ps-content .p-content .p-title1 h4 {
-    padding: 0;
-    margin: 0;
+main .ps-content .p-content .p-title1 .goals{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 1px;
+}
+
+main .ps-content .p-content .p-title1 .goals .goals-icons{
+    padding: 2rem;
 }
 
 
@@ -575,7 +596,7 @@ main .p-content .p-title a {
 .ps-content .p-content .p-title .p-btm {
     border-radius: 0%;
     padding: .4rem 1.5rem;
-    background: var(--sky);
+    background: var(--footer-color);
 }
 
 
@@ -591,14 +612,14 @@ main .p-content .p-title a {
 /*----------------------- pagenation---------------------------------------*/
 
 
-main .container .pagination {
+/* main .containers .pagination {
     position: absolute;
     bottom: 1%;
     height: 1%;
     width: 100%;
-    display: flex;
+    display: flex; */
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center;
     padding-bottom: 1.4rem;
 }
 
@@ -615,7 +636,7 @@ main .ps-content .pagination a {
 main .ps-content .pagination .pages {
     background: var(--text-gray);
     color: var(--white);
-}
+} */
 
 /*-------------x---------- pagenation---------------------x------------------*/
 
@@ -628,12 +649,16 @@ main .ps-content>.side-bar {
     padding-top: 4rem;
 }
 
+main .ps-content>.side-bar .category{
+    background-image: -webkit-linear-gradient(65deg, var(--desgin-color) 50%, var(--ash-color) 50%);
+}
+
 main .ps-content>.side-bar .category-list {
     font-family: var(--Livvic);
 }
 
 main .ps-content>.side-bar .category-list .list-items {
-    background: var(--sky);
+    background: var(--footer-color);
     padding: .2rem 1rem;
     margin: .8rem 0rem;
     /* border-radius: 3rem; */
@@ -674,16 +699,24 @@ main .ps-content>.side-bar .category-list .list-items a {
 
 /*------------------------------- our mission -----------------------------------------------------*/
 
-main .ps-content>.side-bar .our-mission {
-    padding-top: 8rem;
 
-}
 
 
 /*-------------------x------- our mission -----------------x------------------------------------*/
 
 main .side-bar .p-title {
     background-color: var(--white);
+}
+
+main .info{
+    background-color: var(--nav-color);
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+}
+
+main .info .info-content{
+    padding: 2rem;
 }
 
 /*-------------------------------------- patners -------------------------*/
@@ -705,7 +738,7 @@ main .side-bar .p-title {
 
 footer.footer {
     height: 100%;
-    background-color: #2B2A4C;
+    background-color: var(--footer-color);
     position: relative;
 
 }
@@ -864,6 +897,10 @@ border-radius: 100%;
     top: 70%
 }
 
+.product-color{
+    background-color: var(--ash-color);
+}
+
 .site-slider-two {
     position: relative;
     height: 30%;
@@ -884,20 +921,21 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 }
 
 .site-slider-two .slick-track .product:hover span {
     background-color: transparent;
+    color: black;
 }
 
 
 .site-slider-two .prev,
 .site-slider-two .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -987,8 +1025,8 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 
@@ -996,12 +1034,13 @@ border-radius: 100%;
 
 .site-slider-three .slick-track .product:hover span {
     background-color: transparent;
+    color: black;
 }
 
 
 .site-slider-three .prev,
 .site-slider-three .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -1091,20 +1130,21 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 }
 
 .site-slider-four .slick-track .product:hover span {
     background-color: transparent;
+    color: #000;
 }
 
 
 .site-slider-four .prev,
 .site-slider-four .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -1194,20 +1234,21 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 }
 
 .site-slider-five .slick-track .product:hover span {
     background-color: transparent;
+    color: #000;
 }
 
 
 .site-slider-five .prev,
 .site-slider-five .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -1297,20 +1338,21 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 }
 
 .site-slider-six .slick-track .product:hover span {
     background-color: transparent;
+    color: #000;
 }
 
 
 .site-slider-six .prev,
 .site-slider-six .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -1401,20 +1443,21 @@ border-radius: 100%;
     padding: 0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid;
-    background-color: #3f4954;
-    color: lightgray;
+    background-color: var(--footer-color);
+    color: var(--white);
     font-size: smaller;
     font-weight: 200;
 }
 
 .site-slider-seven .slick-track .product:hover span {
     background-color: transparent;
+    color: #000;
 }
 
 
 .site-slider-seven .prev,
 .site-slider-seven .next {
-    background-color: rgb(25, 25, 133);
+    background-color: var(--desgin-color);
     padding: 1rem 1.5rem;
     color: var(--white);
     border-radius: 10rem;
@@ -1483,28 +1526,24 @@ border-radius: 100%;
 
 /*-----x---------- products page---------x---------------------*/
 
+/*------------------------viewport less than or equal to 1024px-------------------*/
 
-/*------------------------viewport less than or equal to 700px-------------------*/
+@media only screen and (max-width: 1024px) {
 
-@media only screen and (max-width: 700px) {
 
-    main .container .ps-content {
-        grid-template-columns: 100%;
-        padding-bottom: 10rem !important;
+    .nam {
+        min-height: 16vh;
+
     }
-
-
-
-    footer .container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* grid-template-columns: 60% 40%; */
-    }
-
 }
 
 
-/*----------x--------------viewport less than or equal to 1190px--------x-----------*/
+
+
+/*-------------x-----------viewport less than or equal to 1024px-------x------------*/
+
+
+
 
 /*------------------------viewport less than or equal to 1190px-------------------*/
 
@@ -1513,7 +1552,7 @@ border-radius: 100%;
         font-size: 0.7rem;
     }
 
-    main .container .pagination {
+    main .containers .pagination {
         position: absolute;
         bottom: 1%;
         height: 1%;
@@ -1525,20 +1564,20 @@ border-radius: 100%;
     }
 
 }
+/*-----------------------viewport less than or equal to 1190px------------------*/
+
 
 /*-----------------------viewport less than or equal to 1163px------------------*/
 
 @media only screen and (max-width: 1163px) {
 
-    main .container .ps-content {
+    main .containers .ps-content {
         padding-bottom: 6rem;
     }
 
 }
 
 /*----------------x--------viewport less than or equal to 1163px------x-------------*/
-
-/*----------------x--------viewport less than or equal to 1190px------x-------------*/
 
 
 /*------------------------viewport less than or equal to 822px-------------------*/
@@ -1588,39 +1627,121 @@ border-radius: 100%;
 
 
 
-/*------------------------viewport less than or equal to 822px-------------------*/
+/*---------------x---------viewport less than or equal to 822px--------x-----------*/
+
+
+/*------------------------viewport less than or equal to 820px-------------------*/
+
+@media only screen and (max-width: 820px) {
+
+
+    .nam {
+        min-height: 8vh;
+
+    }
+}
 
 
 
 
+/*-------------x-----------viewport less than or equal to 820px-------x------------*/
+
+@media only screen and (max-width: 750px) {
 
 
+    .nam {
+        min-height: 15vh;
+
+    }
+}
+
+/*--------------x----------viewport less than or equal to 750px----------x---------*/
 
 
+/*------------------------viewport less than or equal to 700px-------------------*/
 
+@media only screen and (max-width: 700px) {
 
+    main .containers .ps-content {
+        grid-template-columns: 100%;
+        padding-bottom: 10rem !important;
+    }
 
+    main .containers .ps-content .ps {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 
-/*---------------------- viewport less than or equal to 822px  -------------------------------------*/
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: 60% 40%; */
+    }
 
-/* @media only screen and (max-width: 822px) {
-
-    .nav .nav-menu,
-    .nav .nav-items {
-        flex-direction: column;
+    .nam {
+        min-height: 14vh;
 
     }
 
-    .nav .toggle-collapse {
-        display: initial;
+}
+
+
+/*----------x--------------viewport less than or equal to 700px--------x-----------*/
+
+
+
+/*------------------------viewport less than or equal to 654px-------------------*/
+
+@media only screen and (max-width: 654px) {
+
+
+    .nam {
+        min-height: 19vh;
+
     }
+}
+
+/*--------------x----------viewport less than or equal to 654px----------x---------*/
 
 
 
 
-} */
+/*------------------------viewport less than or equal to 540px-------------------*/
+
+@media only screen and (max-width: 540px) {
+
+
+    .nam {
+        min-height: 14vh;
+
+    }
+}
+
+/*--------------x----------viewport less than or equal to 540px----------x---------*/
 
 
 
 
-/*--------x-----------viewport less than or equal to 822px -------------x---------------------*/
+
+/*------------------------viewport less than or equal to 450px-------------------*/
+
+@media only screen and (max-width: 450px) {
+
+
+    .nam {
+        min-height: 8vh;
+
+    }
+}
+
+/*--------------x----------viewport less than or equal to 450px----------x---------*/
+
+
+
+
+
+
+
+
+
+
