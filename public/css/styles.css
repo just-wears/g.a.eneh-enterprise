@@ -198,7 +198,7 @@ button.btm:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 1rem;
+    /* padding-left: 1rem;   */
 }
 
 .nam .toggle-collapsm {
@@ -243,6 +243,7 @@ button.btm:hover {
 
 .nam .nam-items .nam-links:hover {
     background-color: var(--midnight);
+
 }
 
 .nam .nam-items .nam-links:hover a {
