@@ -1653,6 +1653,12 @@ border-radius: 100%;
         min-height: 15vh;
 
     }
+    main .containers .ps-content {
+        grid-template-columns: 100%;
+        padding-bottom: 10rem !important;
+    }
+
+
 }
 
 /*--------------x----------viewport less than or equal to 750px----------x---------*/
