@@ -1642,6 +1642,11 @@ border-radius: 100%;
 /*---------------x---------viewport less than or equal to 822px--------x-----------*/
 
 
+
+
+
+
+
 /*------------------------viewport less than or equal to 820px-------------------*/
 
 @media only screen and (max-width: 820px) {
@@ -1757,9 +1762,27 @@ border-radius: 100%;
 
 
 
-/*------------------------viewport less for height less than or equal to 301px-------------------*/
+/*------------------------viewport less than or equal to 820px-------------------*/
 
-@media only screen and (max-height: 301px)
+@media only screen and (max-height: 820px) {
+
+
+    .nam {
+        min-height: 13vh;
+
+    }
+}
+
+
+
+
+/*-------------x-----------viewport less than or equal to 820px-------x------------*/
+
+
+
+/*------------------------viewport less for height less than or equal to 400px-------------------*/
+
+@media only screen and (max-height: 400px)
 {
 
 
